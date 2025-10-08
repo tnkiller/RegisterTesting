@@ -6,7 +6,7 @@ public class AccountService {
 
     public boolean registerAccount(String username, String password, String email) {
         if (username == null || username.isBlank()) return false;
-        if (password == null || password.length() <= PASSWORD_LIMIT) return false;
+        if (password == null || password.length() <= PASSWORD_LIMIT || password.contains(" ")) return false;
         return isValidEmail(email); // Assume registration is always successful for this example
     }
 
