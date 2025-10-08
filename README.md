@@ -5,4 +5,4 @@ A collection of hands-on exercises for the **Software Testing** course, focusing
 ## ⚙️ Tech stack
 - **Java 21(LTS)**
 - **JUnit 5**, **Mockito**
-- **Maven** (Surefire, Failsafe)
+- **Maven 3.9**
