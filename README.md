@@ -6,3 +6,7 @@ A collection of hands-on exercises for the **Software Testing** course, focusing
 - **Java 21(LTS)**
 - **JUnit 5**, **Mockito**
 - **Maven 3.9**
+## 🧩 Tool
+- **Java 21(LTS)**
+- **JUnit 5**, **Mockito**
+- **Maven 3.9**
