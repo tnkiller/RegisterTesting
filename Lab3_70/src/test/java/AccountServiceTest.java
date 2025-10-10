@@ -1,14 +1,21 @@
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class AccountServiceTest {
+    AccountService accountService;
 
-
-    AccountService accountService = new AccountService();
+    @BeforeAll
+    void initOnce() {
+        accountService = new AccountService();
+    }
 
     @DisplayName("Register account should match expected result from csv")
     @ParameterizedTest(name = "[{index}] user={0}, pass={1}, email={2} => expected={3}")
